@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,
+	initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatibile" content="ie=edge">
+	<title>Dylan's Useless Websites</title>
+	<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
+</head>
+<body style="background-color:#222425;">
+	<center><div class="box glowing" style="margin-top:12%; margin-bottom:10%;color:#5ED2F1;font-family:Orbitron;letter-spacing:4px;text-shadow: 2px 4px 9px #0A87C6;width:60%;">
+		<br>
+		<center><h1 style="font-size: 50px;">TAKE ME</h1></center>
+		<center><h2 style="font-size: 35px;">TO A</h2></center>
+		<center><h1 style="font-size: 50px;">USELESS WEBSITE</h1></center>
+		<center><button id="button" style="color: #5ED2F1; background-color:black;border-radius:45%;cursor:pointer;font-family:Orbitron;width:30%;height:60px;font-size:30px;border:2px solid #73D8DF;box-shadow: 2px 7px 6px #888888;" onClick="chooseRandom()">PLEASE</button></center>
+		<br>
+		<center><p style="letter-spacing: 2px;text-shadow: none;">By Dylan T.</p></center>
+		<br>
+	</div></center>
+	
+	
+</body>
+
+	<style>
+	
+		.box {
+  			display: block;
+  			background: linear-gradient(0deg, black, #444444);
+		}
+
+		.glowing::before{
+  			content: '';
+  			position: absolute;
+  			left: -2px;
+  			top: -2px;
+  			background: linear-gradient(45deg, #e8f74d, #ff6600d9, #00ff66, #13ff13, #ad27ad, #bd2681, #6512b9, #ff3300de, #5aabde);
+  			background-size: 400%;
+  			width: calc(100% + 5px);
+  			height: calc(100% + 5px);
+  			z-index: -1;
+  			animation: glower 20s linear infinite;
+		}
+
+		@keyframes glower {
+  		0% {
+    		background-position: 0 0;
+  		}
+  
+  		50% {
+    		background-position: 400% 0;
+  		}
+  
+  		100% {
+    		background-position: 0 0;
+  			}
+  		}
+
+	</style>
+	
+	<script>
+	
+	
+		var links = [
+    		"file:///Users/dylantremmel/Documents/amogus.html",
+    		"example.com",
+    		"example.com",
+    		"example.com"];
+    		
+    	chooseRandom = function () {
+    	var i = Math.random() * links.length;
+    	i = parseInt(i, 10);
+    	var link = 'http://' + links[i];
+    	window.open(link);
+		};
+		
+		
+	</script>
+
+</html>
