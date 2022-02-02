@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,
+	initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatibile" content="ie=edge">
+	<title>Frog Electric</title>
+</head>
+<body>
+	<br>
+	<div class="main">
+		<center><p id="main-text" style="font-size: 40px;">Hey! I don’t know how you ended up here, but I hope you’re ready to play some freeze tag. </p></center>
+		<center><button id="button" onClick="changeWords()" style="font-size: 30px;cursor:pointer;">Next</button></center>
+		<br>
+		<br>
+		<center><img src="file:///Users/dylantremmel/Desktop/2d986b2efdc8c06cfbf495c1b18b254d.jpg" id="img" style="height:100px;width:100px;"></img></center>
+	</div>
+	<br>
+</body>
+
+<script>
+
+	var i = 0;
+	
+	var words = [ "This is the field. As you can see, it’s shaped like a frog.", "The game will proceed like the standard freeze tag we’re all familiar with, but if you’re frozen by the time the timer goes off, we’ll feed you to a gigantic frog.", "Just kidding. We were not able to find a frog big enough to eat our contestants.",  "HOWEVER, if you’re still frozen by the time the timer goes off, we’ll turn you into a frog.", "Now do you really think we’d do that? We obviously don’t have magic powers.", "HOWEVER, if you’re still frozen by the time the timer goes off, we’ll force feed you frog legs, with no condiments.", "Yikes. Even we’re not that cruel. Besides, who would WANT to cook frogs? They’re so cute!", "HOWEVER, if you’re still frozen by the time the timer goes off, we’ll make you bathe in the essence of poison dart frogs.", "Due to budget cuts, we were not able to acquire any poison dart frogs, so I guess you’re safe from that.", "HOWEVER, if you’re still frozen by the time the timer goes off, we’ll cast a spell on you that will make you inclined to only communicate with frogs, which will alienate you from society. ", "Like I said before, HOW would we even do that? Magic isn’t real. ", "HOWEVER, if you’re still frozen by the time the timer goes off, we’ll tattoo big green frogs on both your FACE cheeks. ", "Nobody on our crew knows how to do tattoos, nor do we have any connections with tattoo artists. So, we can’t do that either.", "HOWEVER, if you’re still frozen by the time the timer goes off, we’ll tape frogs to your head.", "Once again, due to budget cuts, we don’t have enough tape to do that.", "HOWEVER, if you’re still frozen by the time the timer goes off, we’ll blast frog sounds through a speaker on full volume directly into your ears.", "We don’t have a speaker. If we don’t have the budget for tape why do you think we’d have a speaker?", "This is so stupid", "Don’t worry, we’re going to get to the point. ", "I know what you’re probably wondering…", "Why is it called Frog Electric? What does electricity have to do with this?", "The electricity component comes in once the timer goes off and you’re still frozen.", "You’re probably thinking something along the lines of…I won’t even mention it here. ", "BUT THAT’S NOT IT I PROMISE", "If you’re still frozen when the timer goes off", "We’re gonna utilize a large percentage of our electricity to present you with the following light show:"];
+	function changeWords() {  
+  		document.getElementById("main-text").innerText = words[i];
+  		i++;
+  		if(i == words.length){i = 0;}
+	}
+	
+	
+</script>
+
+
+</html>
