@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Josh in the Backrooms</title>
+    </head>
+    <body style="background-color:#DDBD77">
+        <div>
+            <center><img id="slider" src="file:///Users/dylantremmel/Desktop/first_pic.png" width="700px;" height="500px;"/></center>
+            <br>
+            <center><button id="btn" onclick="next();" style="cursor:pointer;width:275px;height:170px;font-size:50px;"> Next </button></center>
+        </div>
+    </body>
+    
+    <script>
+    
+    var images = [
+    "file:///Users/dylantremmel/Desktop/first_pic.png", 
+    "file:///Users/dylantremmel/Desktop/second_pic.png", 
+    "file:///Users/dylantremmel/Desktop/third_pic.png",
+    "file:///Users/dylantremmel/Desktop/fourth_pic.png"
+	];
+	
+	var words = [
+		"Oh no!",
+		"This button?",
+		"FREE JOSH!",
+		"You're welcome, J0sh"
+	];
+	
+	var num = 0;
+	
+	function next() {
+    	var slider = document.getElementById('slider');
+    	var button = document.getElementById('btn');
+    	num++;
+    	if(num >= images.length && num >= words.length) {
+        	num = 0;
+    	}
+    	slider.src = images[num];
+    	document.getElementById('btn').innerText = words[num];
+    	
+	}
+	
+    
+    </script>
+    
+    
+</html>
